@@ -1,0 +1,12 @@
+
+version: "3.7"
+services:
+  app:
+    user: "${USER_RUN}:${GROUP_RUN}"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: capcityflyerscom
+    env_file: .env
+    ports:
+      - "${PORT}:${PORT}"
