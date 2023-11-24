@@ -19,7 +19,8 @@ flask run
 On production, you probably want in `.env`:
 
 ```
-USER_RUN=username
-GROUP_RUN=groupname
-PORT=9000
+FLASK_APP=webapp
+PORT=9002
+USER_RUN=1003
+GROUP_RUN=1003
 ```
